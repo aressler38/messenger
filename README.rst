@@ -48,6 +48,11 @@ Trigger a custom event name, and send 3 types of data to the handler.
    | );                                                 |
    +----------------------------------------------------+
 
+Get the return value of an event handler (currently only works for last bound event handler).
+
+| var myVal = Messenger.send("someEvent", {some:"optional data"});
+
+
 License
 =======
 
