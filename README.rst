@@ -40,6 +40,7 @@ Bind a custom event, and check if data passed to the anonymous handler.
    |     }                                              |
    | });                                                |
    +----------------------------------------------------+
+
 Trigger a custom event name, and send 3 types of data to the handler.
 
    +----------------------------------------------------+
