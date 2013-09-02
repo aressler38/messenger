@@ -28,9 +28,9 @@ note: use the messenger_amd.js for use in AMD loaders like requirejs.
 Examples
 ========
 
-1. Bind a custom event to an anonymous handler.
+Bind a custom event, and check if data passed to the anonymous handler.
 
-    ::
+::
     Messenger.on("myEvent", function(data) {
         console.log("hi you triggered myEvent");
         if (data){
@@ -39,8 +39,10 @@ Examples
         }
     });
 
-#. Trigger a custom event and send some data to the event handler.
-    ``Messenger.send("myEvent", 
+Trigger a custom event name, and send 3 types of data to the handler.
+
+::
+    Messenger.send("myEvent", 
          'sending some data string', 
          {myAttribute:'has some data'}, 
          function(){return 'I can pass functions too';}
