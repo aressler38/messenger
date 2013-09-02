@@ -30,24 +30,24 @@ Examples
 
 Bind a custom event, and check if data passed to the anonymous handler.
 
-::
-    Messenger.on("myEvent", function(data) {
-        console.log("hi you triggered myEvent");
-        if (data){
-            console.log("and you passed some data");
-            console.log(data);
-        }
-    });
-
+   +----------------------------------------------------+
+   | Messenger.on("myEvent", function(data) {           |
+   |     console.log("hi you triggered myEvent");       |
+   |     if (data){                                     |
+   |         console.log("and you passed some data");   |
+   |         console.log(data);                         |
+   |     }                                              |
+   | });                                                |
+   +----------------------------------------------------+
 Trigger a custom event name, and send 3 types of data to the handler.
 
-::
-    Messenger.send("myEvent", 
-         'sending some data string', 
-         {myAttribute:'has some data'}, 
-         function(){return 'I can pass functions too';}
-    );``
-
+   +----------------------------------------------------+
+   | Messenger.send("myEvent",                          |
+   |      'sending some data string',                   |
+   |      {myAttribute:'has some data'},                |
+   |      function(){return 'functions too!!';}         |
+   | );                                                 |
+   +----------------------------------------------------+
 
 License
 =======
