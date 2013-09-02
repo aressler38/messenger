@@ -31,6 +31,7 @@ Examples
 Bind a custom event, and check if data passed to the anonymous handler.
 
    +----------------------------------------------------+
+   |                                                    |
    | Messenger.on("myEvent", function(data) {           |
    |     console.log("hi you triggered myEvent");       |
    |     if (data){                                     |
@@ -42,6 +43,7 @@ Bind a custom event, and check if data passed to the anonymous handler.
 Trigger a custom event name, and send 3 types of data to the handler.
 
    +----------------------------------------------------+
+   |                                                    |
    | Messenger.send("myEvent",                          |
    |      'sending some data string',                   |
    |      {myAttribute:'has some data'},                |
