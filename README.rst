@@ -25,7 +25,7 @@ note: use the messenger_amd.js for use in AMD loaders like requirejs.
 
 License
 =======
-.. image :: http://en.wikipedia.org/wiki/File:CC-BY.png
+.. image :: img/CC-BY-NC.png
 
 
 
