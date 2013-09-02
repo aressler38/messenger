@@ -60,6 +60,6 @@ var myVal = Messenger.send("someEvent", {some:"optional data"});
 License
 =======
 
-messenger.js Licensed Under Creative Commons (CC-BY) 2013 by Alexander Ressler.
+messenger.js is licensed under the Creative Commons (CC-BY) 2013 by Alexander Ressler.
 
 ![Alt text](img/CC-BY.png)
