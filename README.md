@@ -11,18 +11,23 @@ how to use
 It's easy...
 
 // bind a custom event 
-Messenger.on("myEvent", (handler) , [context]);
+
+> Messenger.on("myEvent", (handler) , [context]);
 
 // trigger an event handler and pass whatever data you want.
-Messenger.send("myEvent", [data_1, data_2, ..., data_n]); 
+
+> Messenger.send("myEvent", [data\_1, data\_2, ..., data\_n]); 
 
 // unbind a handler from an event 
-Messenger.off("myEvent", (handler));
+
+> Messenger.off("myEvent", (handler));
 
 // unbind all handlers from an event
-Messenger.allOff("myEvent");
 
-note: use the messenger_amd.js for use in AMD loaders like requirejs. 
+> Messenger.allOff("myEvent");
+
+
+note: use the messenger\_amd.js for use in AMD loaders like requirejs. 
 
 
 Examples
