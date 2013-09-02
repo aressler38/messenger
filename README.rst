@@ -8,6 +8,8 @@ Custom event binding and triggering provided by messenger.js (c) 2013 Alexander 
 how to use
 ==========
 
+It's easy...
+
 | // bind a custom event 
 | Messenger.on(*string* <custom event>, *function* <handler>, *this* [context (default window)]);
 |
@@ -23,9 +25,21 @@ how to use
 note: use the messenger_amd.js for use in AMD loaders like requirejs. 
 
 
+Examples
+========
+
+1. Bind a custom event to an anonymous handler.
+    - Messenger.on("myEvent", function(data) {
+            console.log("hi you triggered myEvent");
+            if (data){console.log("and you passed some data");console.log(data);}
+      });
+#. Trigger a custom event after it's bound
+    - Messenger.send("myEvent", 'some data string', {myAttribute:'has some data}, function(){return 'I can pass functions too';});
+
+
 License
 =======
+
+messenger.js copyright (c) (CC-BY-NC) 2013 by Alexander Ressler.
+
 .. image :: img/CC-BY-NC.png
-
-
-
