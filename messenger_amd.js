@@ -1,8 +1,8 @@
 define(function(){
-// Messenger.js is essentially an IIFE, which returns an object that 
+// messenger.js is essentially an IIFE, which returns an object that 
 // allows you to bind custom DOM events to custom event handlers.
 //
-// copyright (c) 2013 By Alexander Ressler
+// licensed under Creative Commons (CC-BY) 2013 by Alexander Ressler.
     
 var Messenger = (function(){
     String.prototype.hashCode = function(){
