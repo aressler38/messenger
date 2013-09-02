@@ -62,4 +62,4 @@ License
 
 messenger.js copyright (c) (CC-BY-NC) 2013 by Alexander Ressler.
 
-.. image :: img/CC-BY-NC.png
+![Alt text](img/CC-BY-NC.png)
