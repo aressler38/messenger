@@ -1,7 +1,8 @@
-messenger
-=========
+messenger.js
+============
 
 Custom event binding and triggering provided by messenger.js (c) 2013 Alexander Ressler.
+
 
 
 how to use
@@ -19,8 +20,12 @@ how to use
 | // unbind all handlers from an event
 | Messenger.allOff(*string* <event name>);
 
+note: use the messenger_amd.js for use in AMD loaders like requirejs. 
+
 
 License
 =======
+
+<img src="http://en.wikipedia.org/wiki/File:CC-BY.png">
 
 
