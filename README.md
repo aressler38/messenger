@@ -16,7 +16,7 @@ Messenger.on("myEvent", (handler) , [context]);
 ```
 // trigger an event handler and pass whatever data you want.
 ```
-Messenger.send("myEvent", [data\_1, data\_2, ..., data\_n]); 
+Messenger.send("myEvent", [data_1, data_2, ..., data_n]); 
 ```
 // unbind a handler from an event 
 ```
