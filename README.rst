@@ -34,10 +34,6 @@ Bind a custom event, and check if data passed to the anonymous handler.
    |                                                    |
    | Messenger.on("myEvent", function(data) {           |
    |     console.log("hi you triggered myEvent");       |
-   |     if (data){                                     |
-   |         console.log("and you passed some data");   |
-   |         console.log(data);                         |
-   |     }                                              |
    | });                                                |
    +----------------------------------------------------+
 
