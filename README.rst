@@ -30,13 +30,15 @@ Examples
 
 1. Bind a custom event to an anonymous handler.
 
-   ``Messenger.on("myEvent", function(data) {
+    ::
+    Messenger.on("myEvent", function(data) {
         console.log("hi you triggered myEvent");
         if (data){
             console.log("and you passed some data");
             console.log(data);
         }
-     });``
+    });
+
 #. Trigger a custom event and send some data to the event handler.
     ``Messenger.send("myEvent", 
          'sending some data string', 
