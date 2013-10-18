@@ -7,7 +7,7 @@ define(function(){
 var Messenger = (function(){
     String.prototype.hashCode = function(){
         var hash = 0, i, char, l;
-        if (this.length == 0) return hash;
+        if (this.length === 0) return hash;
         for (i = 0, l = this.length; i < l; i++) {
             char  = this.charCodeAt(i);
             hash  = ((hash<<5)-hash)+char;
@@ -27,7 +27,7 @@ var Messenger = (function(){
 
     return ({
         on: function(trigger, handler, context) {
-            if (typeof handler != "function") {throw new Error("Messenger can't bind an undefined method");}
+            if (typeof handler !== "function") {throw new Error("Messenger can't bind an undefined method");}
             if (!events[trigger]) {
                 events[trigger] = new customEvent(trigger); // bind the trigger to a method
                 events[trigger].handlers = {};
@@ -44,7 +44,7 @@ var Messenger = (function(){
         // fire the event and pass the event handler custom data
         send: function(event, dataThru) {
             var result;
-            if (dataThru) {
+            if (typeof dataThru !== "undefined") {
                 var argLen = arguments.length;
                 var dataThrus = new Array(argLen);
                 for (var i=0; i<argLen; i++) {
