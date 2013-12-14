@@ -1,8 +1,6 @@
 messenger.js
 ============
-
-Custom event binding and triggering provided by messenger.js (c) 2013 Alexander Ressler.
-
+A module that gives you simple, custom event bindings and triggers.  
 
 
 how to use
@@ -26,7 +24,6 @@ Messenger.off("myEvent", (handler));
 ```
 Messenger.allOff("myEvent");
 ```
-
 note: use the messenger\_amd.js for use in AMD loaders like requirejs. 
 
 
@@ -60,6 +57,6 @@ var myVal = Messenger.send("someEvent", {some:"optional data"});
 License
 =======
 
-messenger.js is licensed under the Creative Commons (CC-BY) 2013 by Alexander Ressler.
+Creative Commons (CC-BY) 2013 Alexander Ressler.
 
 ![Alt text](img/CC-BY.png)
